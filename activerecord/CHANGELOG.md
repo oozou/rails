@@ -1,3 +1,10 @@
+*   Make sure prepared statements cache is left in consistent state if exception is raised
+    in PostgreSQL adapter.
+
+    Fixes #1627.
+
+    *Andrew Bezzub*
+
 *   `Relation#joins` is no longer affected by the target model's
     `current_scope`, with the exception of `unscoped`.
 
